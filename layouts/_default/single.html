@@ -12,7 +12,8 @@
 		</header>
 		{{- if .Params.thumbnail }}
 		<figure class="post__thumbnail">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+			<!-- <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}"> -->
+			<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
 		</figure>
 		{{- end }}
 		{{- partial "post_toc.html" . -}}
